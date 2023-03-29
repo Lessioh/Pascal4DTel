@@ -27,7 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
     height: 200.0),
     itemBuilder: (context, index, realIndex) {
       return Container(
-        child: Image.asset(images[index], fit: BoxFit.fill,),
+        width: MediaQuery.of(context).size.width,
+        child: Image.asset(images[index], fit: BoxFit.cover,),
       );
       
     },
